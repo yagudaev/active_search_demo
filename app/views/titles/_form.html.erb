@@ -1,0 +1,57 @@
+<%= form_with(model: title) do |form| %>
+  <% if title.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(title.errors.count, "error") %> prohibited this title from being saved:</h2>
+
+      <ul>
+        <% title.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :director_id %>
+    <%= form.text_field :director_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :release_year %>
+    <%= form.text_field :release_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duration_in_minutes %>
+    <%= form.number_field :duration_in_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duration_seasons %>
+    <%= form.number_field :duration_seasons %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

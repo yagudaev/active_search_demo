@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @title.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @title.type %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @title.director_id %>
+</p>
+
+<p>
+  <strong>Release year:</strong>
+  <%= @title.release_year %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @title.rating %>
+</p>
+
+<p>
+  <strong>Duration in minutes:</strong>
+  <%= @title.duration_in_minutes %>
+</p>
+
+<p>
+  <strong>Duration seasons:</strong>
+  <%= @title.duration_seasons %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @title.description %>
+</p>
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>
