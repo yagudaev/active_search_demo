@@ -88,6 +88,11 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    factory_bot (6.1.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.1.0)
+      factory_bot (~> 6.1.0)
+      railties (>= 5.0.0)
     ffi (1.14.2)
     formtastic (4.0.0.rc1)
       actionpack (>= 5.2.0)
@@ -267,6 +272,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   devise
+  factory_bot_rails
   formtastic (= 4.0.0.rc1)
   forty_facets
   jbuilder (~> 2.7)
