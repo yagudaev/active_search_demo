@@ -2,7 +2,7 @@ class CreateTitles < ActiveRecord::Migration[6.1]
   def change
     create_table :titles do |t|
       t.string :name
-      t.enum :type
+      t.integer :type
       t.references :director, null: false, foreign_key: true
       t.ingeger :release_year
       t.string :rating
