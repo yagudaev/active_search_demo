@@ -1,3 +1,4 @@
 class Title < ApplicationRecord
-  # belongs_to :director
+  has_many :appearances
+  has_many :directors, -> { where(role)}, through: :appearances, class:
 end
