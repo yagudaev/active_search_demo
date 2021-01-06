@@ -249,6 +249,7 @@ DEPENDENCIES
   pundit
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.0)
+  ransack
   sass-rails (>= 6)
   spring
   turbolinks (~> 5)

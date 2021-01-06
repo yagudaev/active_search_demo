@@ -29,8 +29,26 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'activeadmin'
+
+#######
+# Search
+#######
+
+# Authentication/Authorization
 gem 'devise'
 gem 'pundit'
+
+# Filtering
+gem 'ransack'
+
+# Full-text search
+gem 'pg_search'
+
+# Facets
+gem 'forty_facets'
+
+# Pagination
+gem 'pagy'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
