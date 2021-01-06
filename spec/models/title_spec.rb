@@ -1,7 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Title, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:title) { create :title }
 
-  # shoulda tests
+  describe '#directors' do
+    subject { title.directors }
+    it { is_expected.to match_array([]) }
+  end
+
+  describe '#participants' do
+    subject { title.participants }
+    it { is_expected.to match_array([]) }
+  end
 end
